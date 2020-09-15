@@ -4,7 +4,7 @@
 #include <pthread.h>
 #include <stdbool.h>
 
-int products_prices_by_items[5];
+int products_prices_by_items[3];
 int number_of_full_items = 0;
 int minimal_price = 10;
 int maximal_price = 300;
@@ -155,9 +155,13 @@ void *update_reaction() {
 
 int main() {
     printf("Welcome to our shop! Here we have crazy producer and consumer! They are so crazy that will not stop to buy and sell! \n");
-    printf("You can stop them only by enter the 's' and then fast the Enter button!\n");
-    printf("To print prices and make a pause press the 'p' button and fast press Enter button!\n", pause_time_sec);
-    printf("It will be wait for a %d seconds to see prices. Enjoy the show! To start press 'y' on your keyboard:\n");
+    printf("You can stop them only by enter the 's' and then fast press the Enter button!\n");
+    printf("To print prices and make a pause enter the 'p' and fast press Enter button! ");
+    printf("It will be wait for a %d seconds to see prices.\n", pause_time_sec);
+    printf("There is %d items for products. While the process is running guys sell and buy with the different reaction.\n",
+        sizeof(products_prices_by_items) / sizeof(int));
+    printf("Reactions are not always similar. It changes! Sometimes one of the guys cannot do anything and go to sleep\n");
+    printf("Enjoy the show! To start press 'y' on your keyboard: \n");
     char start_command;
     scanf(" %c", &start_command);
     if (start_command != 'y') {
