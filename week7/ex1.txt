@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   3537	   1888	    260	   5685	   1635	ex1_example_programm
