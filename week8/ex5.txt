@@ -1,0 +1,3 @@
+A physical address allows you to directly access data by accessing an address in memory.
+A virtual address, on the other hand, allows you to access data in memory at an address
+that needs to be recalculated based on pages and offsets.

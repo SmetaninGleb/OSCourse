@@ -1,0 +1,3 @@
+If pages are 8 KB, then it is needed to be filled 13 bits for offset (13 bits -> 8192 -> 8 KB).
+Then for pointing to page we have 16 bits - 13 bits = 3 bits -> 2^3 = 8 pages.
+Answer: 8 pages.

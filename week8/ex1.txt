@@ -1,0 +1,7 @@
+Used Windows:
+
+Total Physical Memory:     6 018 MB
+Available Physical Memory: 1 757 MB
+Virtual Memory: Max Size:  11 907 MB
+Virtual Memory: Available: 2 490 MB
+Virtual Memory: In Use:    9 417 MB
