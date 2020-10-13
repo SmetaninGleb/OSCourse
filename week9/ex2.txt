@@ -1,0 +1,2 @@
+Ratio will increase if there will be more subsequences of the same numbers of pages.
+There will be less updates and then more hits. Thus, more ration. And vice versa.
