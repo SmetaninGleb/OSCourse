@@ -1,0 +1,4 @@
+$find ~ -inum 12103423999181843
+/home/mobaxterm/week01/file.txt
+/home/mobaxterm/week10/_ex2.txt
+$ find ~ -inum 12103423999181843 -exec rm {} \;

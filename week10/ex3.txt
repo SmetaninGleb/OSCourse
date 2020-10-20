@@ -1,0 +1,24 @@
+ 1420  [2020-10-20 15:28:38] ls -l _ex3.txt
+-rw-r--r--    1 Acer     UsersGrp         0 Oct 20 15:20 _ex3.txt
+ 1421  [2020-10-20 15:33:00] chmod ugo-x _ex3.txt
+ 1422  [2020-10-20 15:33:03] ls -l _ex3.txt
+-rw-rw-r--    1 Acer     UsersGrp         0 Oct 20 15:20 _ex3.txt
+ 1423  [2020-10-20 15:33:07] chmod uo+rwx _ex3.txt
+ 1424  [2020-10-20 15:33:10] ls -l _ex3.txt
+-rwxrw-rwx    1 Acer     UsersGrp         0 Oct 20 15:20 _ex3.txt
+ 1425  [2020-10-20 15:33:32] chmod g=u _ex3.txt
+ 1426  [2020-10-20 15:33:34] ls -l _ex3.txt
+-rwxrwxrwx    1 Acer     UsersGrp         0 Oct 20 15:20 _ex3.txt
+
+1)660:
+	u : rw-
+	g : rw-
+	o : ---
+1)775:
+	u : rwx
+	g : rwx
+	o : r-x
+1)777:
+	u : rwx
+	g : rwx
+	o : rwx
