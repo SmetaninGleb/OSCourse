@@ -1,0 +1,26 @@
+> time ./copy -DBUF_SIZE=8 fileA_small fileB_small
+./copy old-file new-file
+real    0m 0.05s
+user    0m 0.01s
+sys     0m 0.01s
+
+> time ./copy -DBUF_SIZE=128 fileA_small fileB_small
+./copy old-file new-file
+real    0m 0.05s
+user    0m 0.03s
+sys     0m 0.00s
+
+> time ./copy -DBUF_SIZE=8 fileA_big fileB_big
+./copy old-file new-file
+real    0m 0.05s
+user    0m 0.03s
+sys     0m 0.01s
+
+> time ./copy -DBUF_SIZE=128 fileA_big fileB_big
+./copy old-file new-file
+real    0m 0.05s
+user    0m 0.03s
+sys     0m 0.01s
+
+
+Conclusion: Bigger buffer - faster. Smaller - lower. 
